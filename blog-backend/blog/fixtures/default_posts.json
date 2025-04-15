@@ -1,0 +1,54 @@
+[
+    {
+      "model": "blog.category",
+      "pk": 1,
+      "fields": {
+        "name": "React"
+      }
+    },
+    {
+      "model": "blog.category",
+      "pk": 2,
+      "fields": {
+        "name": "Django"
+      }
+    },
+    {
+      "model": "blog.category",
+      "pk": 3,
+      "fields": {
+        "name": "Freelancing"
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 1,
+      "fields": {
+        "title": "Why I Chose React for My Frontend",
+        "content": "React is a powerful JavaScript library...",
+        "created_at": "2025-04-12T10:00:00Z",
+        "category": 1
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 2,
+      "fields": {
+        "title": "Learning Django as a Frontend Dev",
+        "content": "At first, Django felt intimidating...",
+        "created_at": "2025-04-12T10:15:00Z",
+        "category": 2
+      }
+    },
+    {
+      "model": "blog.post",
+      "pk": 3,
+      "fields": {
+        "title": "My Freelancing Goals for 2025",
+        "content": "I’ve been learning fullstack development to become a freelancer...",
+        "created_at": "2025-04-12T10:30:00Z",
+        "category": 3
+      }
+    }
+  ]
+  

@@ -1,0 +1,268 @@
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post p {
+  color: #555;
+}
+
+.post small {
+  color: #888;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #135ba1;
+}
+
+button:nth-of-type(2) {
+  background-color: #e53935;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #c62828;
+}
+/* Navbar styling */
+.navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 16px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+}
+/* Fade-in animation for posts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post {
+  animation: fadeIn 0.4s ease-in-out;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Button hover transitions */
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Input glow on focus */
+input:focus,
+textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 4px rgba(25, 118, 210, 0.6);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Base theme */
+.app {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #f7f7f7;
+  color: #222;
+}
+
+/* Dark theme */
+.app.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.app.dark .container {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+
+.app.dark .post {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+.app.dark input,
+.app.dark textarea {
+  background-color: #2c2c2c;
+  color: white;
+  border-color: #555;
+}
+
+.app.dark button {
+  background-color: #90caf9;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1976d2;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.theme-toggle {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #f1f1f1;
+}
+
+/* Dark mode override */
+.app.dark .navbar {
+  background-color: #333;
+  color: white;
+}
+
+.app.dark .theme-toggle {
+  background-color: #444;
+  color: white;
+}
+
+.footer {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.dark .footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+}
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  background-color: white;
+  color: #1976d2;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+/* Icon animation */
+.theme-toggle .icon {
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: transform 0.4s ease;
+}
+
+.app.dark .theme-toggle .icon {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Smooth label appearance */
+.theme-toggle .label {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover .label {
+  transform: translateY(-2px);
+}
+
