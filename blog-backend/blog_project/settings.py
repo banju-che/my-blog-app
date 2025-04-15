@@ -124,7 +124,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_HEADERS = list(default_headers)
 
-ALLOWED_HOSTS = ['banju-blog-app.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['my-blog-app-1-lu68.onrender.com', 'localhost', '127.0.0.1']
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
